@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 
+export const dynamic = 'force-static';
+
 export const metadata: Metadata = {
   title: "Terms of Service — Carbonmate",
   description: "Terms of service for Carbonmate UK Ltd.",

@@ -1,5 +1,6 @@
-import React from "react";
-import Link from "next/link"; // ✅ import Link
+import Link from "next/link";
+
+export const dynamic = 'force-static';
 
 export const metadata = {
   title: "Thank you — Carbonmate",

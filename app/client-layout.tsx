@@ -168,7 +168,7 @@ export default function ClientLayout({ children }: { children: React.ReactNode }
               >
                 Terms
               </Link>
-              {/* LinkedIn Badge - Replace YOUR_LINKEDIN_URL with your actual LinkedIn profile URL */}
+                      {/* LinkedIn Badge */}
               <a 
                 href="https://www.linkedin.com/company/carbonmate-uk/" 
                 target="_blank" 

@@ -84,7 +84,7 @@ export default function ContactPage() {
             <h2 className="text-2xl font-semibold text-slate-900 dark:text-slate-100 mb-4">Ready to Get Started?</h2>
             <p className="text-slate-600 dark:text-slate-300 mb-6">
               Join our founding customers and start your compliance journey today. 
-              Get 50% off for 12 months, then 20% lifetime discount.
+              Get 50% off for 12 months, then 15% lifetime discount.
             </p>
             <Link
               href="/#lead"

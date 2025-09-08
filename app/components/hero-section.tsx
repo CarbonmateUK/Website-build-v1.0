@@ -42,7 +42,7 @@ export default function HeroSection() {
               </Link>
             </div>
             <p className="mt-3 text-sm text-slate-500 dark:text-slate-400">
-              <span className="font-medium text-slate-700 dark:text-slate-300">Founding offer</span>: 50% off for 12 months, then 20% lifetime discount.
+              <span className="font-medium text-slate-700 dark:text-slate-300">Founding offer</span>: 50% off for 12 months, then 15% lifetime discount.
               Make your business more competitive in tendering.
             </p>
           </div>
