@@ -19,14 +19,14 @@ export default function HeroSection() {
               <span className="h-1 w-1 rounded-full bg-emerald-600 dark:bg-emerald-400"></span>
               SECR & PPN 06/21
             </div>
-            <h1 className="mt-4 text-4xl font-extrabold tracking-tight text-slate-900 dark:text-slate-100 sm:text-5xl lg:text-6xl">
-              <span className="gradient-text">SECR & PPN 06/21</span> compliance in days, not months
-            </h1>
-            <p className="mt-4 text-lg leading-7 text-slate-600 dark:text-slate-300">
-              Upload your activity data (fuel, electricity, business travel) as Excel or CSV. We calculate Scope 1,
-              Scope 2, and relevant Scope 3 emissions and generate audit-ready SECR and a Carbon Reduction Plan
-              aligned to PPN 06/21. Streamline compliance and win more work with bigger clients—without paying £££ for consultants.
-            </p>
+                    <h1 className="mt-4 text-4xl font-extrabold tracking-tight text-slate-900 dark:text-slate-100 sm:text-5xl lg:text-6xl">
+                      <span className="gradient-text">Streamlining Sustainability</span> for your business
+                    </h1>
+                    <p className="mt-4 text-lg leading-7 text-slate-600 dark:text-slate-300">
+                      No buzzwords. No corporate consultants. No upselling.<br/>
+                      Carbonmate helps you get sustainability done — without the fluff.<br/>
+                      Supercharge your sustainability, future-proof your business, and win more work — powered by Carbonmate.
+                    </p>
             <div className="mt-8 flex flex-col sm:flex-row items-stretch gap-3">
               <Link
                 href="#lead"

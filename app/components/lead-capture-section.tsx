@@ -40,7 +40,7 @@ export default function LeadCaptureSection() {
           <div className="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 p-2 shadow-sm">
             <iframe
               title="Founding customer form"
-              src="https://tally.so/embed/wzk9Va?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+              src="https://tally.so/embed/wzk9Va?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1&theme=auto"
               className="w-full min-h-[700px] rounded-xl"
               loading="lazy"
               allow="fullscreen; geolocation; microphone; camera"

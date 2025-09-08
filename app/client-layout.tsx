@@ -28,7 +28,7 @@ export default function ClientLayout({ children }: { children: React.ReactNode }
   return (
     <>
       {/* Global Header */}
-      <header className="sticky top-0 z-50 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-700">
+      <header className="sticky top-0 z-50 bg-white border-b border-slate-200 dark:border-slate-700">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-2 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 rounded-lg">
             <Image
@@ -42,37 +42,37 @@ export default function ClientLayout({ children }: { children: React.ReactNode }
           </Link>
 
           {/* Desktop Navigation */}
-          <nav aria-label="Primary" className="hidden md:flex items-center gap-8 text-sm text-slate-600 dark:text-slate-300">
+          <nav aria-label="Primary" className="hidden md:flex items-center gap-8 text-sm text-slate-900">
             <Link 
               href="/about" 
-              className="hover:text-slate-900 dark:hover:text-slate-100 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 rounded-md px-2 py-1"
+              className="hover:text-slate-700 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 rounded-md px-2 py-1"
             >
               About us
             </Link>
             <Link 
               href="/compliance" 
-              className="hover:text-slate-900 dark:hover:text-slate-100 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 rounded-md px-2 py-1"
+              className="hover:text-slate-700 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 rounded-md px-2 py-1"
             >
               SECR & PPN 06/21
             </Link>
             <Link 
               href="/timeline" 
-              className="hover:text-slate-900 dark:hover:text-slate-100 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 rounded-md px-2 py-1"
+              className="hover:text-slate-700 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 rounded-md px-2 py-1"
             >
               Product timeline
             </Link>
             <Link 
               href="/pricing" 
-              className="hover:text-slate-900 dark:hover:text-slate-100 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 rounded-md px-2 py-1"
+              className="hover:text-slate-700 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 rounded-md px-2 py-1"
             >
               Pricing
             </Link>
-                          <Link
-                href="/#lead"
-                className="inline-flex items-center rounded-xl bg-emerald-600 hover:bg-emerald-700 dark:bg-emerald-500 dark:hover:bg-emerald-600 px-4 py-2 font-medium text-white shadow-sm active:translate-y-px transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2"
-              >
-                Get started
-              </Link>
+            <Link
+              href="/#lead"
+              className="inline-flex items-center rounded-xl bg-emerald-600 hover:bg-emerald-700 dark:bg-emerald-500 dark:hover:bg-emerald-600 px-4 py-2 font-medium text-white shadow-sm active:translate-y-px transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2"
+            >
+              Get started
+            </Link>
           </nav>
 
           {/* Mobile menu button */}
@@ -97,44 +97,44 @@ export default function ClientLayout({ children }: { children: React.ReactNode }
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
-              className="md:hidden border-t border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900"
+              className="md:hidden border-t border-slate-200 dark:border-slate-700 bg-white"
             >
               <nav className="px-4 py-6 space-y-4" aria-label="Mobile navigation">
                 <Link 
                   href="/about" 
-                  className="block py-2 text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 rounded-md px-2"
+                  className="block py-2 text-slate-900 hover:text-slate-700 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 rounded-md px-2"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   About us
                 </Link>
                 <Link 
                   href="/compliance" 
-                  className="block py-2 text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 rounded-md px-2"
+                  className="block py-2 text-slate-900 hover:text-slate-700 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 rounded-md px-2"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   SECR & PPN 06/21
                 </Link>
                 <Link 
                   href="/timeline" 
-                  className="block py-2 text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 rounded-md px-2"
+                  className="block py-2 text-slate-900 hover:text-slate-700 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 rounded-md px-2"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Product timeline
                 </Link>
                 <Link 
                   href="/pricing" 
-                  className="block py-2 text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 rounded-md px-2"
+                  className="block py-2 text-slate-900 hover:text-slate-700 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 rounded-md px-2"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Pricing
                 </Link>
-                                  <Link
-                    href="/#lead"
-                    className="block w-full text-center rounded-xl bg-emerald-600 hover:bg-emerald-700 dark:bg-emerald-500 dark:hover:bg-emerald-600 px-4 py-3 font-medium text-white shadow-sm active:translate-y-px transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    Get started
-                  </Link>
+                <Link
+                  href="/#lead"
+                  className="block w-full text-center rounded-xl bg-emerald-600 hover:bg-emerald-700 dark:bg-emerald-500 dark:hover:bg-emerald-600 px-4 py-3 font-medium text-white shadow-sm active:translate-y-px transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Get started
+                </Link>
               </nav>
             </motion.div>
           )}
@@ -150,12 +150,12 @@ export default function ClientLayout({ children }: { children: React.ReactNode }
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-slate-500 dark:text-slate-400">
             <p>© {new Date().getFullYear()} Carbonmate UK Ltd. All rights reserved.</p>
             <div className="flex items-center gap-6">
-                                  <Link 
-                      href="/contact" 
-                      className="hover:text-slate-700 dark:hover:text-slate-300 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 rounded-md px-2 py-1"
-                    >
-                      Contact
-                    </Link>
+              <Link 
+                href="/contact" 
+                className="hover:text-slate-700 dark:hover:text-slate-300 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 rounded-md px-2 py-1"
+              >
+                Contact
+              </Link>
               <Link 
                 href="/privacy" 
                 className="hover:text-slate-700 dark:hover:text-slate-300 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 rounded-md px-2 py-1"
@@ -170,7 +170,7 @@ export default function ClientLayout({ children }: { children: React.ReactNode }
               </Link>
               {/* LinkedIn Badge - Replace YOUR_LINKEDIN_URL with your actual LinkedIn profile URL */}
               <a 
-                href="YOUR_LINKEDIN_URL" 
+                href="https://www.linkedin.com/company/carbonmate-uk/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 hover:text-slate-700 dark:hover:text-slate-300 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 rounded-md px-2 py-1"
