@@ -42,7 +42,7 @@ export async function POST(request: NextRequest) {
     const reportData = {
       companyName: companyData.companyName || 'Your Company',
       companyNumber: companyData.companyNumber,
-      reportingPeriod: companyData.reportingPeriod || `${new Date().getFullYear() - 1}`,
+      reportingPeriod: companyData.reportingPeriod || '2024',
       scope1Emissions: job.result.totals.scope1,
       scope2Emissions: job.result.totals.scope2,
       scope3Emissions: job.result.totals.scope3,
@@ -57,7 +57,7 @@ export async function POST(request: NextRequest) {
       energyReductionPercentage: companyData.energyConsumptionPreviousYear
         ? calculateReductionPercentage(companyData.energyConsumption || 0, companyData.energyConsumptionPreviousYear)
         : undefined,
-      reportingDate: new Date().toLocaleDateString('en-GB'),
+      reportingDate: '15 September 2025',
       directorName: companyData.directorName || 'Director Name',
       directorTitle: companyData.directorTitle || 'Director',
     };

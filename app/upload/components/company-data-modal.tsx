@@ -30,7 +30,7 @@ export default function CompanyDataModal({ isOpen, onClose, onGenerateReport, re
   const [formData, setFormData] = useState({
     companyName: '',
     companyNumber: '',
-    reportingPeriod: `${new Date().getFullYear() - 1}`,
+    reportingPeriod: '2024',
     directorName: '',
     directorTitle: 'Director',
     turnover: '',

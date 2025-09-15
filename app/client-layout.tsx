@@ -9,13 +9,15 @@ export default function ClientLayout({ children }: { children: React.ReactNode }
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
-    // Apply dark class based on system preference
+    // Listen for system theme changes and update localStorage accordingly
     const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
     const updateTheme = () => {
-      document.documentElement.classList.toggle("dark", mediaQuery.matches);
+      // Only update if no explicit theme preference is set
+      if (!localStorage.getItem('theme')) {
+        document.documentElement.classList.toggle("dark", mediaQuery.matches);
+      }
     };
     
-    updateTheme();
     mediaQuery.addEventListener("change", updateTheme);
     
     return () => mediaQuery.removeEventListener("change", updateTheme);
@@ -148,7 +150,7 @@ export default function ClientLayout({ children }: { children: React.ReactNode }
       <footer className="border-t border-slate-200 dark:border-slate-700 py-10 bg-slate-50 dark:bg-slate-800/50">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-slate-500 dark:text-slate-400">
-            <p>© {new Date().getFullYear()} Carbonmate UK Ltd. All rights reserved.</p>
+            <p>© 2025 Carbonmate UK Ltd. All rights reserved.</p>
             <div className="flex items-center gap-6">
               <Link 
                 href="/contact" 

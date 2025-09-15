@@ -14,7 +14,7 @@ export default function TermsPage() {
         <h1 className="text-4xl font-bold text-slate-900 dark:text-slate-100 mb-8">Terms of Service</h1>
         
         <p className="text-slate-600 dark:text-slate-300 mb-6">
-          <strong>Last updated:</strong> {new Date().toLocaleDateString('en-GB')}
+          <strong>Last updated:</strong> 15 September 2025
         </p>
 
         <section className="mb-8">
